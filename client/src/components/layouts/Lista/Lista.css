@@ -1,0 +1,209 @@
+.ListaContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    background-color: #1b2223;
+
+    align-items: center;
+
+}
+
+
+
+.Options{
+    width: clamp(600px, 60%, 1100px);
+    height: 50px;
+    margin: 20px 0;
+    gap: 10px;
+
+    display: flex;
+}
+
+.Options input{
+    flex: 1;
+
+    border-radius: 5px;
+    border: 0;
+
+    background-color: #3a4f50;
+    outline: 0;
+
+    padding-left: 10px;
+    font-size: 1.05rem;
+    font-family: "Open Sans";
+
+    color: #F4fefd;
+
+}
+
+.Options button{
+    font-size: 1.05rem;
+    font-family: "Open Sans";
+
+    background-color: #0ef6cc;
+    color: #1b2223;
+
+    border-radius: 5px;
+    border: 0;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+}
+
+.Options button:hover{
+    background-color: #F4fefd;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Lista{
+    display: flex;
+    flex-direction: column;
+    width: clamp(600px, 60%, 1100px);
+
+    gap: 10px;
+
+    height: auto;
+    min-height: 500px;
+    max-height: 600px;
+
+
+
+    border: 2px solid #0ef6cc;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+    overflow-y: auto;
+
+    list-style-type: none;
+}
+
+
+.Lista::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+.Lista::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+
+.Lista::-webkit-scrollbar-thumb {
+    background-color: #0ef6cc;
+    border-radius: 10px;
+  }
+  
+
+.Lista li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    width: 100%;
+    min-height: 50px;
+    padding: 0 7px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+}
+
+.Lista li::before{
+    content: '';
+    position: absolute;
+
+    width: 70%;
+    height: .5px;
+
+    left: 50%;
+    translate: -50%;
+
+    top: -5px;
+    background-color: #3a4f504a;
+}
+
+
+
+.Lista li:nth-child(1)::before{
+    width: 0;
+    height: 0;
+}
+
+.Lista li:hover{
+    background-color: #3a4f50a2;
+}
+
+.closebutton{
+    display: flex;
+    padding: 4px;
+
+    font-size: 1.01rem;
+    color: #1b2223;
+
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+
+    background-color: #0ef6cc;
+
+   
+
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+.closebutton:hover{
+    background-color: #F4fefd;
+
+}
+
+.TextList{
+    flex: 1;
+    font-size: 1.3rem;
+    color: #F4fefd;
+    font-family: "Open Sans";
+
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+
+    cursor: pointer;
+}
+
+.TextList .Lista li{
+    background-color: #3a4f50a2;
+}
+
+
+
+
+.EditLine{
+    background-color: red;
+}
